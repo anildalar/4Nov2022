@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing Table</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-color: #E6E6E6;
+                margin: 0px;
+                font-family: arial,helvetica;
+            }
+            .pricing_table_box{
+                width:80%;
+                height:600px;
+                margin: 100px auto;
+                clear: both;
+                text-align: center;
+            }
+            .pricing_box{
+                width:29%;
+                height:100%;
+                background-color: #fff;
+                float:left;
+                border-top-left-radius: 150px;
+                border-bottom-right-radius: 150px;
+                box-shadow:0px 0px 10px 10px rgba(0,0,0,0.1);
+                position: relative;
+            }
+            /*
+            :nth-child(number) {
+                css declarations;
+            }
+            */
+            .pricing_table_box > div:nth-child(2){
+                margin:0px 70px;
+            }
+            .pricing_table_box ul{
+                list-style: none;
+                padding:0px;
+                width:60%;  
+                margin:auto;
+            }
+            .pricing_table_box ul > li{
+                height:40px;
+                line-height: 40px;
+                border-bottom:1px solid #EFEFEF;
+            }
+            .green{
+                color:green;
+            }
+            .red{
+                color:red;
+            }
+            .selectbtn{
+                background:red;
+                border:none;
+                padding:15px 80px;
+                color:#fff;
+                position:absolute;
+                bottom:50px;
+                left:-30px;
+                z-index: 2000;
+            }
+            .triangle{
+                width: 30px;
+                height: 30px;
+                background:#99021B;
+                position:absolute;
+                bottom:82px;
+                left:-23px;
+                transform:rotate(45deg);
+                z-index: 1000;
+            }
+            .pricing_box h1{
+                margin-top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pricing_table_box">
+            <div class="pricing_box">
+                <h1>Basic</h1>
+                <div>$2.99</div>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                </ul>
+                <button class="selectbtn">Select</button>
+                <div class="triangle"></div>
+            </div>
+            <div class="pricing_box">
+                <h1>Basic</h1>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                </ul>
+                <button class="selectbtn">Select</button>
+                <div class="triangle"></div>
+            </div>
+            <div class="pricing_box">
+                <h1>Basic</h1>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                    <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
+                </ul>
+                <button class="selectbtn">Select</button>
+                <div class="triangle"></div>
+            </div>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
