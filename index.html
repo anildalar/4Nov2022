@@ -41,7 +41,7 @@
                 list-style: none;
                 padding:0px;
                 width:60%;  
-                margin:auto;
+                margin:60px auto;
             }
             .pricing_table_box ul > li{
                 height:40px;
@@ -64,26 +64,41 @@
                 left:-30px;
                 z-index: 2000;
             }
-            .triangle{
+            .box{
                 width: 30px;
                 height: 30px;
-                background:#99021B;
                 position:absolute;
-                bottom:82px;
-                left:-23px;
-                transform:rotate(45deg);
-                z-index: 1000;
+                bottom:45px;
+                left:0px;
+                background-image: url("./img/triagle.png");
+                background-size: cover;
             }
             .pricing_box h1{
+                font-weight:100;
                 margin-top:50px;
             }
+            .pricing_badge{
+                background:red;
+                padding:15px 40px;
+                color:#fff;
+                position:absolute;
+                top:80px;
+                right:-20px;
+            }
+            .pricing_badge .box{
+                width:20px;
+                bottom:-30px;
+                left:100px !important;
+                transform:scale(-1,-1)
+            }
+            
         </style>
     </head>
     <body>
         <div class="pricing_table_box">
             <div class="pricing_box">
-                <h1>Basic</h1>
-                <div>$2.99</div>
+                <h1 style="color:red">Basic</h1>
+                <div class="pricing_badge">$2.99 <div class="box"></div></div>
                 <ul>
                     <li><i class="fa-solid fa-check green"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
@@ -92,11 +107,12 @@
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                 </ul>
-                <button class="selectbtn">Select</button>
-                <div class="triangle"></div>
+                <button class="selectbtn">Select <div class="box"></div></button>
+                
             </div>
             <div class="pricing_box">
-                <h1>Basic</h1>
+                <h1 style="color:#0552AB">Standard</h1>
+                <div class="pricing_badge" style="background-color:#0552AB;">$5.99 <div class="box"></div></div>
                 <ul>
                     <li><i class="fa-solid fa-check green"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
@@ -105,11 +121,12 @@
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                 </ul>
-                <button class="selectbtn">Select</button>
-                <div class="triangle"></div>
+                <button class="selectbtn " style="background-color:#0552AB;">Select <div class="box"></div></button>
+                
             </div>
             <div class="pricing_box">
-                <h1>Basic</h1>
+                <h1 style="color:#009B8B">Premium</h1>
+                <div class="pricing_badge" style="background:#009B8B">$9.99 <div class="box"></div></div>
                 <ul>
                     <li><i class="fa-solid fa-check green"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
@@ -118,8 +135,8 @@
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                     <li><i class="fa-solid fa-xmark red"></i> Sample Text</li>
                 </ul>
-                <button class="selectbtn">Select</button>
-                <div class="triangle"></div>
+                <button class="selectbtn" style="background:#009B8B">Select <div class="box"></div></button>
+                
             </div>
             
         </div>
